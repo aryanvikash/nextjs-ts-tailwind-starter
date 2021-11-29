@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@Components/*": ["components/*"],
+      "@Redux/*":["Redux/*"],
+      "@Actions/*":["Redux/actions/*"],
+      "@Reducers/*":["Redux/Reducers/*"],
+      "@public/*": ["public/*"],
+      "@style/*": ["style/*"],
+      "@Common/*": ["components/common/*"],
+      "@Helper/*": ["components/helper/*"],
+    }
+  },
+
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/higherOrder/withAuth.tsx", "pages/api/*", "models/hireus.model.ts"],
+  "exclude": [
+    "node_modules"
+  ]
+}
